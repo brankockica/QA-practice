@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing QAcademy App" parallel="classes">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"></listener>
+    </listeners>
+    <test name="Proba">
+        <classes>
+            <class name="automation.test.AsertionTest"></class>
+            <class name="automation.test.AsertionTestTwo"></class>
+
+        </classes>
+    </test> <!-- Test -->
+    <parameter name="output-directory" value="test-output"></parameter>
+</suite> <!-- Suite -->
